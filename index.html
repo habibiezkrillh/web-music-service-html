@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">MyMusic</h1>
+                <h2 class="subtitle">Streaming your favorite songs</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <aside class="menu">
+                    <p class="menu-label">Navigation</p>
+                    <ul class="menu-list">
+                        <li><a class="is-active">Home</a></li>
+                        <li><a>Playlists</a></li>
+                        <li><a>Favorites</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h2 class="title">Now Playing</h2>
+                    <audio id="audio-player" controls>
+                        <source src="sample-song.mp3" type="audio/mpeg">
+                        <!-- Your browser doesnt support the audio element-->
+                    </audio>
+                </div>
+                <div class="box">
+                    <h2 class="title">Playlist</h2>
+                    <ul id="playlist">
+                        <li><a href="#" data-src="song1.mp3">Song 1</a></li>
+                        <li><a href="#" data-src="song2.mp3">Song 2</a></li>
+                        <li><a href="#" data-src="song3.mp3">Song 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS Script-->
+    <script src="js/script.js"></script>
+</body>
+</html>

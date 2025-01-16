@@ -1,0 +1,12 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.menu-list a.is-active {
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.box {
+    padding: 20px;
+}
